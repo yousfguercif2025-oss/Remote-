@@ -36,3 +36,21 @@ class HihiRemoteApp extends StatelessWidget {
     );
   }
 }
+import 'package:flutter/material.dart';
+import 'screens/home_screen.dart';
+
+void main() {
+  runApp(HihiRemoteApp());
+}
+
+class HihiRemoteApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'HIHI Remote',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData.dark(),
+      home: HomeScreen(),
+    );
+  }
+}
